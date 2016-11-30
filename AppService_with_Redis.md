@@ -21,8 +21,8 @@ REDIS_HOST *hostname from redis cache*
 
 **Install Memcached Object Cache WordPress plugin using wp-admin**:
 
-Navigate to your Wordpress page and complete install instructions. Navigate to Plugins tab and search for new *Memcached Object Cache* Plugin.
-Using FTP add following lines to wp-config.php:
+Navigate to your Wordpress page and complete install instructions. Navigate to **Plugins** tab => **Add new**,  search for new *Memcached Object Cache* Plugin and install it.
+Using FTP add the following code to **wp-config.php** file just above the *stop editing* comment near the end of the file.:
 ```
 $memcached_servers = array(
     'default' => array('localhost:' . getenv("MEMCACHESHIM_PORT"))
