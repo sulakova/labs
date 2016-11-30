@@ -20,7 +20,8 @@ Document and the same is added in code section).
 ```#js
 context.bindings.outputDocument =
 {text: "Comments: '"+ data.comment.body + "'"};
-``` code.
+```
+code.
 7. Comment previous commit on GitHub and verify the same output at our DocumentDB Document Explorer.
 8. *(optional)* go to Integrate section in Azure Functions window. Under Outputs, click on **New Output** => **SendGrid**. Enter your **To Address** and some **From Address**. Click on Save, and navigate to Develop section in Window. Replace 
 ```#js
