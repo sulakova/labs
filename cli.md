@@ -1,6 +1,4 @@
-#Spustit
 Create Linux VM with CLI installed using: https://portal.azure.com
-
 
 Menu **New** -> **Virtual Machines** -> **Ubuntu Server 16.04 LTS**
 
