@@ -3,4 +3,13 @@
 
 1. v Azure portaly pridať Function app
 
-2. 
+#[App Service, Mysql a Redis cache](https://github.com/sulakova/labs/blob/master/AppService_with_Redis.md)
+
+#Azure VM a CLI
+
+#Function App
+
+#Docker
+
+
+
