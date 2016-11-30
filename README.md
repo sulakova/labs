@@ -10,8 +10,10 @@
 **4. [Azure Container Service / Docker](https://github.com/sulakova/labs/blob/master/acs.md)**
 
 _kur ziva_
-```
-kod;
-import (node)
-npm install
+```C#
+	#r "Microsoft.WindowsAzure.Storage"
+	#r "System.Net.Http"
+	
+	using System;
+	using System.Linq;
 ```
