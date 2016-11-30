@@ -8,3 +8,10 @@
 **3. [Function App](https://github.com/sulakova/labs/blob/master/fct.md)**
 
 **4. [Azure Container Service / Docker](https://github.com/sulakova/labs/blob/master/acs.md)**
+
+_kur ziva_
+```
+kod;
+import (node)
+npm install
+```
