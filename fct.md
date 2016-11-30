@@ -31,5 +31,23 @@ context.bindings.outputDocument =
 {text: "Comments: '"+ data.comment.body + "'"};
 ```
 
+8. Commit a change with comment on GitHub and verify the same at our DocumentDB Document Explorer.
+
+9. *(optional)* go to Integrate section in Azure Functions window. Under Outputs, click on **New Output** => **SendGrid**. Enter your **To Address** and some **From Address**. Click on Save, and navigate to Develop section in Window. Replace 
+```#js
+ context.done();
+```
+block with following
+```#js
+    context.done(null, {
+        message: {
+            subject: 'New GH comment',
+            content: [{
+                type: 'text/plain',
+                value: "Comments: '"+ data.comment.body + "'"
+            }]
+        }
+    });
+```
 
 
