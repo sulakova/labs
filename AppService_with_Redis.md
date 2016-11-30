@@ -1,12 +1,18 @@
+- Provision an instance of the Azure Redis Cache Service
+- Provision free instance of Mysql from Cleardb
+- Deploy a WordPress site in Azure
+
 #Enable the Web Apps Memcache shim:
 http://windows.php.net/downloads/pecl/releases/memcache/3.0.8/php_memcache-3.0.8-5.6-nts-vc11-x86.zip
-ftp copy php_memcache.dll to site\wwwroot\bin\ext
+Open your **App Service** page and set ftp credentials on **Deployment credentials** tab.
+Connect to repository using ftp and copy *php_memcache.dll* to *site\wwwroot\bin\ext*. You can find FTP connection information on **Properties** tab.
 
-app setting
+Navigate to **App setting** tab and set these **App settings**:
+
 PHP_EXTENSIONS bin\ext\php_memcache.dll
 MEMCACHESHIM_REDIS_ENABLE true
-REDIS_KEY <primary key from redis cache>
-REDIS_HOST <hostname from redis cache>
+REDIS_KEY *primary key from redis cache*
+REDIS_HOST *hostname from redis cache*
 
 #Install Memcached Object Cache WordPress plugin using wp-admin:
 
