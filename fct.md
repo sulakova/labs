@@ -17,18 +17,18 @@ The same should get logged in our Azure function window, **Log** section.
 Once account selection is done, final window would appear. Click on Save, and navigate to Develop section in Window.
 6. You can directly copy below code and paste it (be sure you code correct ‘Document Parameter Name’ present in Integrate window. Here as you can see, this name is output
 Document and the same is added in code section).
-```#js
+```
 context.bindings.outputDocument =
 {text: "Comments: '"+ data.comment.body + "'"};
 ```
 code.
 7. Comment previous commit on GitHub and verify the same output at our DocumentDB Document Explorer.
 8. *(optional)* go to Integrate section in Azure Functions window. Under Outputs, click on **New Output** => **SendGrid**. Enter your **To Address** and some **From Address**. Click on Save, and navigate to Develop section in Window. Replace 
-```#js
+```#C
  context.done();
 ```
 block with following
-```#js
+```#C
     context.done(null, {
         message: {
             subject: 'New GH comment',
