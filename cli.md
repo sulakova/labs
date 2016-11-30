@@ -2,19 +2,20 @@
 1.	Prihláste sa na https://portal.azure.com
 2.	Vytvorte vzorový Linux VM:
 
-Menu „New“ -> “Virtual Machines” -> “Ubuntu Server 16.04 LTS”
+Menu **New** -> **Virtual Machines** -> **Ubuntu Server 16.04 LTS**
 
-Deployment Model: Resource Manager
+Deployment Model: **Resource Manager**
 
-Name = <vase_meno_bez_diakritiky>vm
+Name = <vase_meno_bez_diakritiky>
 User name = <vase_meno_bez_diakritiky>
-Password = heslo, ktorým sa budete prihlasovat do VM
-Resource Group – new: “CLI”
+Password = heslo, ktorým sa budete prihlasovat do VM alebo SSH kluc.
 
-Size -> View All -> F2
+Resource Group –> new: “CLI”
+
+**Size** -> **View All** -> **F2**
 
 Stiahnut script.sh z http://aka.ms/gopas – použiť v:
-Settings ->  Extensions -> New Resource For Linux: “Custom Script for Linux” -> Add Extension -> Create -> 
+**Settings** ->  **Extensions** -> **New Resource For Linux**: **“Custom Script for Linux”** -> **Add Extension** -> **Create** -> 
 
 ostatné ponechať predvolené
 
