@@ -49,5 +49,5 @@ block with following
         }
     });
 ```
-
-
+Go to Function App Settings and click Configure app settings. Under App settings add a new key **SendGridApiKey** with value **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** *(this is a temporal Sendgrid Key, if it no longer works, create your own in SndGrid user portal)*
+10. test email delivery with creating another comment on GitHub.
