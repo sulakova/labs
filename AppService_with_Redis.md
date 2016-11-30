@@ -20,6 +20,7 @@ REDIS_KEY *primary key from redis cache*
 REDIS_HOST *hostname from redis cache*
 
 **Install Memcached Object Cache WordPress plugin using wp-admin**:
+
 Navigate to your Wordpress page and complete install instructions. Navigate to Plugins tab and search for new *Memcached Object Cache* Plugin.
 Using FTP add following lines to wp-config.php:
 ```
@@ -28,6 +29,6 @@ $memcached_servers = array(
 );
 ```
 
-ftp move *object-cache.php* from *wp-content/plugins/memcached* folder to the *wp-content* folder 
+Using ftp move *object-cache.php* from *wp-content/plugins/memcached* folder to the *wp-content* folder.
 
-Verify the Memcache Object Cache plugin is functioning by executing *keys \** in redis console
+Verify the Memcache Object Cache plugin is functioning by executing *keys \** in your Redis console.
