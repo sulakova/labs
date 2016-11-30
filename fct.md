@@ -12,21 +12,16 @@ Webhook will be added and it would look like the below screenshot (**green tick 
 **Testing**
 4. Commit a change with comment on GitHub.
 The same should get logged in our Azure function window, **Log** section.
-
 **Log comments entered in GitHub to Azure DocumentDB using Azure Functions:**
-
 6. go to Integrate section in Azure Functions window. Under Outputs, click on **New Output** => **Azure DocumentDB Document**. Check **Would you like the DocumentDB database and collection to be created for you?** and click on link **New**, you will be listed with existing DocumentDB account associated with your Azure account, if any. 
 Once account selection is done, final window would appear. Click on Save, and navigate to Develop section in Window.
-
 7. You can directly copy below code and paste it (be sure you code correct ‘Document Parameter Name’ present in Integrate window. Here as you can see, this name is output
 Document and the same is added in code section).
 ```#node
 context.bindings.outputDocument =
 {text: "Comments: '"+ data.comment.body + "'"};
 ```
-
-8. Commit a change with comment on GitHub and verify the same at our DocumentDB Document Explorer.
-
+8. Comment previous commit on GitHub and verify the same output at our DocumentDB Document Explorer.
 9. *(optional)* go to Integrate section in Azure Functions window. Under Outputs, click on **New Output** => **SendGrid**. Enter your **To Address** and some **From Address**. Click on Save, and navigate to Develop section in Window. Replace 
 ```#js
  context.done();
@@ -43,5 +38,5 @@ block with following
         }
     });
 ```
-Go to Function App Settings and click Configure app settings. Under App settings add a new key **SendGridApiKey** with value **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** *(this is a temporal Sendgrid Key, if it no longer works, create your own in SndGrid user portal)*
+Go to Function App Settings and click Configure app settings. Under App settings add a new key **SendGridApiKey** with value **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** *(this is a temporal Sendgrid Key, if it no longer works, create your own in SndGrid user portal)*.
 10. test email delivery with creating another comment on GitHub.
