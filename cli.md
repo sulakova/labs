@@ -1,4 +1,4 @@
-#SPustit
+#Spustit
 1.	Prihláste sa na https://portal.azure.com
 2.	Vytvorte vzorový Linux VM:
 
