@@ -1,5 +1,4 @@
 1. Click on **New => Web + Mobile => Function App** and Enter desired **Function App name**, and other details. Select the storage account (or create a new one) and click on **Create**.
-
 After clicking on new function, you will be redirected to the below page with all different Azure Functions templates.
 
 2. select **‘GitHub Webhook – Node’** template which will be triggered as per event over GitHub takes place. Give some appropriate name to this function and click **Create**. 
