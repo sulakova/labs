@@ -27,7 +27,7 @@ Confirm **Ok** and **Create**.
 
 5.	Connect to this IP address using your SSH clinet and authentication information provided in step 2.
 
-6.	Login to Azure CLI: [skrip](https://github.com/sulakova/labs/raw/master/cli.sh)
+6.	Login to Azure CLI: [scrip](https://github.com/sulakova/labs/raw/master/cli.sh)
 
 7.	Set the Azure Resource Manager mode : “azure config mode arm”
 8.	Edit file /etc/waagent.conf:
