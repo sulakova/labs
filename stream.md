@@ -1,4 +1,4 @@
-**Stream analytick demo:**
+**Stream analytics demo:**
 ```#SQL
 WITH subquery AS (  
         SELECT message, sentiment(message) as result from tweetsin  
